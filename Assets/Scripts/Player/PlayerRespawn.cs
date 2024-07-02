@@ -38,13 +38,13 @@ public class PlayerRespawn : MonoBehaviour
         else if (life < 2)
         {
             Destroy(hearts[1].gameObject);
-            Invoke("Hit", 0.2f);
+            animator.Play("Hit");
             clip.Play();
         }
         else if (life < 3)
         {
             Destroy(hearts[2].gameObject);
-            Invoke("Hit", 0.2f);
+            animator.Play("Hit");
             clip.Play();
 
         }
@@ -55,11 +55,6 @@ public class PlayerRespawn : MonoBehaviour
         life--;
         CheckLife();
 
-    }
-
-    public void Hit() 
-    {
-        animator.Play("Hit");
     }
 
     void GameOver()

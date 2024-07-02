@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 560202339859894660}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5023289, y: -2.2707047, z: -0.04238156}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -275,7 +275,7 @@ Transform:
   m_GameObject: {fileID: 4517335760879226837}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5063289, y: -2.2707047, z: -0.04238156}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -442,7 +442,7 @@ Transform:
   m_GameObject: {fileID: 6628804951913558804}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5003289, y: -2.2667048, z: -0.04238156}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -576,7 +576,7 @@ Transform:
   m_GameObject: {fileID: 7098918701969757711}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5103289, y: -2.268705, z: -0.04238156}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -711,7 +711,7 @@ Transform:
   m_GameObject: {fileID: 8002241145852111784}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.51, y: -2.275, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -756,8 +756,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1143357475
-  m_SortingLayer: 5
+  m_SortingLayerID: -844423579
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 1809551088, guid: 55b9fe089f0d8874ba87cad995ef61c9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -782,7 +782,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b0796b74dfdcc49be48664c01eccc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 3364666118146172414}
   spriteRenderer: {fileID: 5241776493464436646}
   brokenParts: {fileID: 3317607399047266135}
   jumpForce: 4
@@ -866,11 +865,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3259567108040613807, guid: 772d204a804f8af418b19fb45b925fb6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.503
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3259567108040613807, guid: 772d204a804f8af418b19fb45b925fb6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.275
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3259567108040613807, guid: 772d204a804f8af418b19fb45b925fb6, type: 3}
       propertyPath: m_LocalPosition.z

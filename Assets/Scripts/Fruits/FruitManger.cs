@@ -36,7 +36,7 @@ public class FruitManger : MonoBehaviour
         {
             
             levelCleared.gameObject.SetActive(true);
-            Invoke("ChangeScene", 2);
+            Invoke("ChangeScene", 1);
             
         }
     }

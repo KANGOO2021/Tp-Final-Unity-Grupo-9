@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3843946082170919830}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.25, y: 3.914, z: -0.01323316}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerM: {fileID: 0}
-  vel: 3
+  vel: 1
   animator: {fileID: 4247318521331611767}
   spriteRenderer: {fileID: 4863897060810560090}
 --- !u!95 &4247318521331611767
