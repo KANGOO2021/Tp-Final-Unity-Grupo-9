@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static Cinemachine.CinemachineFreeLook;
 
 public class Settings : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class Settings : MonoBehaviour
     [SerializeField] private GameObject menu;
     [SerializeField] private GameObject menuSettings;
 
+
+ 
     public void Pause() 
     {
         Time.timeScale = 0f;
@@ -25,6 +28,7 @@ public class Settings : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+      
 
     }
 
@@ -40,6 +44,8 @@ public class Settings : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
+
+
 
 
 

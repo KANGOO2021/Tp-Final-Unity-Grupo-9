@@ -13,15 +13,16 @@ public class JumpBox : MonoBehaviour
 
     public int lifes = 1;
 
-    public GameObject fruit;
+    //public GameObject fruit;
 
     public GameObject boxCollider;
 
     public Collider2D col2D;
+
     void Start()
     {
-        fruit.SetActive(false);     
-        fruit.transform.SetParent(FindObjectOfType<FruitManger>().transform);
+        //fruit.SetActive(false);     
+        //fruit.transform.SetParent(FindObjectOfType<FruitManger>().transform);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -48,7 +49,7 @@ public class JumpBox : MonoBehaviour
         {
             boxCollider.SetActive(false);
             col2D.enabled = false;
-            fruit.SetActive(true);
+            //fruit.SetActive(true);
             brokenParts.SetActive(true);
             spriteRenderer.enabled = false;
             Invoke("DestroyBox", 0.5f);

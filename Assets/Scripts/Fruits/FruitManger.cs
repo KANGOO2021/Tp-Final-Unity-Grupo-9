@@ -16,6 +16,7 @@ public class FruitManger : MonoBehaviour
     public int totalFruitsInLevel;
 
 
+
     void Start()
     {
         totalFruitsInLevel = transform.childCount;
@@ -24,6 +25,8 @@ public class FruitManger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      
+
         AllFruitCollectec();
         totalFruits.text = totalFruitsInLevel.ToString();
         collectedFruits.text = transform.childCount.ToString();
@@ -32,6 +35,7 @@ public class FruitManger : MonoBehaviour
 
     public void AllFruitCollectec()
     {
+        
         if (transform.childCount==0)
         {
             
