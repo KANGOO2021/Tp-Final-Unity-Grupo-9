@@ -24,4 +24,10 @@ public class BeeBullet : MonoBehaviour
         transform.Translate(Vector2.down * speed * Time.deltaTime);
         
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        other.transform.GetComponent<PlayerRespawn>().PlayerDamaged();
+        Destroy(gameObject);
+    }
 }

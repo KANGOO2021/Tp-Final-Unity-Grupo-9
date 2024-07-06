@@ -11,6 +11,7 @@ public class PlantBullet : MonoBehaviour
 
     public bool right;
 
+ 
     // Start is called before the first frame update
     void Start()
     {
@@ -29,4 +30,12 @@ public class PlantBullet : MonoBehaviour
             transform.Translate(Vector2.left * speed * Time.deltaTime);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        other.transform.GetComponent<PlayerRespawn>().PlayerDamaged();
+        Destroy(gameObject);
+    }
+
+
 }

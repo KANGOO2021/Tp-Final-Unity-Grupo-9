@@ -4,9 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class FruitManger : MonoBehaviour
 {
+
+
     public TMP_Text levelCleared;
 
     public TMP_Text totalFruits;
@@ -14,6 +17,8 @@ public class FruitManger : MonoBehaviour
     public TMP_Text collectedFruits;
 
     public int totalFruitsInLevel;
+
+    public GameObject audioSource;
 
 
 
@@ -40,7 +45,9 @@ public class FruitManger : MonoBehaviour
         {
             
             levelCleared.gameObject.SetActive(true);
-            Invoke("ChangeScene", 1);
+            audioSource.SetActive(false);
+          
+            Invoke("ChangeScene", 2);
             
         }
     }

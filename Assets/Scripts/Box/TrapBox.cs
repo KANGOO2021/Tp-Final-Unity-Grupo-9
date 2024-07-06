@@ -10,7 +10,7 @@ public class TrapBox : MonoBehaviour
 
     public float jumpForce = 4f;
 
-    public int lifes = 1;
+    public int lifes = 2;
 
     public GameObject trap;
 
@@ -50,13 +50,13 @@ public class TrapBox : MonoBehaviour
             trap.SetActive(true);
             brokenParts.SetActive(true);
             spriteRenderer.enabled = false;
-            Invoke("DestroyBox", 0.5f);
+            Invoke("DestroyBox", 2f);
         }
     }
 
     public void DestroyBox()
     {
         Destroy(transform.parent.gameObject);
-        trap.SetActive(true);
+       
     }
 }

@@ -15,6 +15,8 @@ public class PlantDamage : MonoBehaviour
 
     public Transform launchSpawnPoint;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +30,7 @@ public class PlantDamage : MonoBehaviour
         {
             waitedTime = waitTimeToAttack;
             animator.Play("AttackPlant");
-            Invoke("LaunchBullet", 0.5f);
+            Invoke("LaunchBullet", 0.2f);
         }
         else 
         {
@@ -42,4 +44,6 @@ public class PlantDamage : MonoBehaviour
 
         newBullet = Instantiate(bulletPrefeb, launchSpawnPoint.position, launchSpawnPoint.rotation);
     }
+
+   
 }

@@ -17,10 +17,13 @@ public class PlayerRespawn : MonoBehaviour
     [SerializeField] private GameObject gameOver;
     [SerializeField] private GameObject player;
 
+    public Player script;
+
+    
     // Start is called before the first frame update
     void Start()
     {
-        life= hearts.Length;
+        life= hearts.Length;  
     }
 
     public void CheckLife()
@@ -30,9 +33,12 @@ public class PlayerRespawn : MonoBehaviour
            
             Destroy(hearts[0].gameObject);
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+  
             animator.Play("Death");
             death.Play();
+            script.enabled = false;
             Invoke("GameOver", 1);
+            
 
         }
         else if (life < 2)
@@ -61,6 +67,9 @@ public class PlayerRespawn : MonoBehaviour
     {
         player.SetActive(false);
         gameOver.SetActive(true);
+        
+
+
     }
 
 }
