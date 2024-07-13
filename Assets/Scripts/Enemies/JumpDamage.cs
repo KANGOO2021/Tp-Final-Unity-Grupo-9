@@ -6,15 +6,10 @@ public class JumpDamage : MonoBehaviour
 {
 
     public BoxCollider2D boxCollider2;
-
     public Animator animator;
-
     public SpriteRenderer spriteRenderer;
-
     public GameObject destroyParticle;
-
     public float jumpForce = 2.5f;
-
     public int lifes = 2;
 
 

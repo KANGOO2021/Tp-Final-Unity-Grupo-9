@@ -3,7 +3,6 @@
 public class PlayerAnimation : MonoBehaviour
 {
     private Animator anim;
-    //private Animator swordAnim;
 
     void Start()
     {

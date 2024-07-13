@@ -6,24 +6,17 @@ public class PlantDamage : MonoBehaviour
 {
 
     private float waitedTime;
-
     public float waitTimeToAttack = 3;
-
     public Animator animator;
-
     public GameObject bulletPrefeb;
-
     public Transform launchSpawnPoint;
 
-    
 
-    // Start is called before the first frame update
     void Start()
     {
         waitedTime = waitTimeToAttack;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (waitedTime <= 0) 

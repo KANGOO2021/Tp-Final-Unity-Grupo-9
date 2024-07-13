@@ -26,8 +26,6 @@ public class Player : MonoBehaviour
     private void OnEnable()
     {
         _playerControls.Player.Enable();
-
-       
         _playerControls.Player.Jump.performed  += Jump;
     }
 

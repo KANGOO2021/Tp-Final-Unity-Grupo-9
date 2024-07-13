@@ -3,8 +3,6 @@ using UnityEngine;
 public class PersistentData : MonoBehaviour
 {
 
-    
-
     private void Awake()
     {
         GameObject[] persistedDataObjects = GameObject.FindGameObjectsWithTag("PersistentData");
@@ -14,10 +12,7 @@ public class PersistentData : MonoBehaviour
 
             Destroy(gameObject);
         }
-
-
-        DontDestroyOnLoad(gameObject);
-        
+        DontDestroyOnLoad(gameObject);  
     }
 
   

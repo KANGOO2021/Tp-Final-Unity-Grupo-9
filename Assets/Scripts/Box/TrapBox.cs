@@ -5,22 +5,15 @@ using UnityEngine;
 public class TrapBox : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
-
     public GameObject brokenParts;
-
     public float jumpForce = 4f;
-
     public int lifes = 2;
-
     public GameObject trap;
-
     public GameObject boxCollider;
-
     public Collider2D col2D;
     void Start()
     {
         trap.SetActive(false);
-       
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -56,7 +49,6 @@ public class TrapBox : MonoBehaviour
 
     public void DestroyBox()
     {
-        Destroy(transform.parent.gameObject);
-       
+        Destroy(transform.parent.gameObject); 
     }
 }

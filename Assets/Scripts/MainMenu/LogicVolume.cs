@@ -21,7 +21,6 @@ public class LogicVolume : MonoBehaviour
     {
         slider.value = PlayerPrefs.GetFloat("volumeAudio");
         AudioListener.volume = slider.value;
-
     }
 
    

@@ -6,22 +6,14 @@ public class Follow : MonoBehaviour
 {
 
     Vector2 Enemypos;
-
     public GameObject playerM;
-
     bool perseguirP;
-
     public float vel;
-
     public Animator animator;
-
     private Vector2 actualPos;
-
     public SpriteRenderer spriteRenderer;
 
 
-
-    // Update is called once per frame
 
     void Update()
     {

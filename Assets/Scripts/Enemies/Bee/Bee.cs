@@ -5,32 +5,22 @@ using UnityEngine;
 public class Bee : MonoBehaviour
 {
     public Animator animator;
-
     public SpriteRenderer spriteRenderer;
-
     public float speed = 0.5f;
-
     private float waitTime;
-
     public float startWaitTime = 2;
-
     private int i = 0;
-
     public Transform[] moveSpots;
 
-    // Start is called before the first frame update
     void Start()
     {
-
         waitTime = startWaitTime;
-
     }
 
-    // Update is called once per frame
+  
     void Update()
     {
      
-
         transform.position = Vector2.MoveTowards(transform.position, moveSpots[i].transform.position, speed * Time.deltaTime);
 
         if (Vector2.Distance(transform.position, moveSpots[i].transform.position) < 0.1f)
@@ -53,7 +43,6 @@ public class Bee : MonoBehaviour
             }
         }
     }
-
 
 
 }

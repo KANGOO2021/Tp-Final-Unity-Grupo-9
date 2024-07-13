@@ -6,19 +6,15 @@ public class PlantBullet : MonoBehaviour
 {
 
     public float speed = 2;
-
     public float lifeTime = 2;
-
     public bool right;
 
  
-    // Start is called before the first frame update
     void Start()
     {
         Destroy(gameObject, lifeTime);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (right)
@@ -36,6 +32,5 @@ public class PlantBullet : MonoBehaviour
         other.transform.GetComponent<PlayerRespawn>().PlayerDamaged();
         Destroy(gameObject);
     }
-
 
 }

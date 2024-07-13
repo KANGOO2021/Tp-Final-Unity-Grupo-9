@@ -6,30 +6,21 @@ public class MoveEnemies : MonoBehaviour
 {
 
     public Animator animator;
-
     public SpriteRenderer spriteRenderer;
-
     public float speed = 0.5f;
-
     private float waitTime;
-
     public float startWaitTime = 2;
-
     private int i = 0;
-
     private Vector2 actualPos;
-
     public Transform[] moveSpots;
 
-    // Start is called before the first frame update
+
     void Start()
     {
-
         waitTime = startWaitTime;
-
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         StartCoroutine(CheckEnemyMoving());
